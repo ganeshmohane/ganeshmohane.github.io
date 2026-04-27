@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPU vs CUDA vs TensorRT | Ganesh Mohane</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <section class="section">
+    <h1>🚀 Understanding CPU, CUDA & TensorRT Runtimes</h1>
+
+    <p><strong>By Ganesh Mohane</strong></p>
+
+    <h2>🧠 Why this matters</h2>
+    <p>
+      When I started working on real ML systems, I thought:
+      <br><br>
+      <b>“Model is trained → just run inference”</b>
+      <br><br>
+      Reality:
+    </p>
+
+    <pre>
+Model performance = model + runtime + hardware + optimization
+    </pre>
+
+    <p>
+      Same model can run:
+      <br>• 200ms on CPU ❌
+      <br>• 80ms on CUDA ⚡
+      <br>• 40ms on TensorRT 🚀
+    </p>
+
+    <h2>⚙️ What is a runtime?</h2>
+    <pre>
+Model → Runtime → Hardware
+    </pre>
+
+    <h2>🖥️ CPU Runtime</h2>
+    <p><b>Pros:</b> Works everywhere, easy debugging</p>
+    <p><b>Cons:</b> Slow for deep learning</p>
+
+    <h2>⚡ CUDA Runtime</h2>
+    <p>
+      Uses GPU parallel processing → faster than CPU
+    </p>
+
+    <h2>🚀 TensorRT Runtime</h2>
+    <p>
+      Optimizes model with:
+    </p>
+
+    <ul>
+      <li>Layer fusion</li>
+      <li>Kernel optimization</li>
+      <li>FP16 / INT8 precision</li>
+    </ul>
+
+    <h2>⚖️ Comparison</h2>
+
+    <pre>
+CPU → Slow
+CUDA → Fast
+TensorRT → Very Fast
+    </pre>
+
+    <h2>🔥 Real-world insight</h2>
+    <p>
+      CPU → unusable  
+      CUDA → good  
+      TensorRT → production-ready  
+    </p>
+
+    <h2>🧩 Final takeaway</h2>
+
+    <pre>
+Learn model + runtime + system design
+    </pre>
+
+    <br><br>
+
+    <a href="../index.html">⬅ Back to Home</a>
+  </section>
+
+</body>
+</html>
