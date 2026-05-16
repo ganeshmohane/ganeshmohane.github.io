@@ -9,6 +9,19 @@ redirect_from:
 
 {% include base_path %}
 
+## 📄 Resume PDF
+
+<div style="width: 100%; height: 800px; border: 2px solid #ddd; border-radius: 8px; overflow: hidden; margin-bottom: 40px;">
+  <iframe 
+    src="{{ base_path }}/files/resume.pdf#view=FitH"
+    style="width: 100%; height: 100%; border: none;">
+  </iframe>
+</div>
+
+**[📥 Download Resume PDF]({{ base_path }}/files/resume.pdf)**
+
+---
+
 Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
