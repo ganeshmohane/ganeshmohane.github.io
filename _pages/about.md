@@ -45,8 +45,4 @@ Outside of coding, I enjoy:
 - 📚 Reading and thinking outside the box
 - 🌱 Contributing to social initiatives through volunteering
 
----
 
-📍 **Mumbai, Maharashtra, India**  
-📧 [ganeshmohane5@gmail.com](mailto:ganeshmohane5@gmail.com)  
-🔗 [LinkedIn](https://linkedin.com/in/ganeshmohane) | [GitHub](https://github.com/ganeshmohane) | [Kaggle](https://kaggle.com/ganeshmohane)
