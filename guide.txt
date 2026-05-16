@@ -1,0 +1,161 @@
+═══════════════════════════════════════════════════════════════════════════
+                       JEKYLL SITE GUIDE - QUICK START
+═══════════════════════════════════════════════════════════════════════════
+
+TECH STACK:
+-----------
+• Jekyll (static site generator)
+• Ruby + Bundler (dependencies)
+• Node.js (optional, for JS minification)
+• Theme: AcademicPages (modified Minimal Mistakes)
+
+═══════════════════════════════════════════════════════════════════════════
+INITIAL SETUP (ONE TIME ONLY):
+═══════════════════════════════════════════════════════════════════════════
+
+PATH: /usr/src/app
+
+RUN THESE COMMANDS:
+  cd /usr/src/app
+  bundle install
+
+That's it. Only run this once.
+
+═══════════════════════════════════════════════════════════════════════════
+START THE DEV SERVER:
+═══════════════════════════════════════════════════════════════════════════
+
+PATH: /usr/src/app
+
+RUN THIS COMMAND:
+  bundle exec jekyll serve -H 0.0.0.0 -w --port 4001 --config _config.yml,_config_docker.yml
+
+THEN OPEN IN BROWSER:
+  http://localhost:4001
+
+DO NOT CLOSE THIS TERMINAL - it must keep running.
+
+═══════════════════════════════════════════════════════════════════════════
+AUTO-COMPILATION (WHILE SERVER IS RUNNING):
+═══════════════════════════════════════════════════════════════════════════
+
+✅ YES - AUTOMATIC REBUILD:
+  • You edit a file (template, markdown, CSS, config)
+  • Jekyll watches and rebuilds automatically (takes 2-5 seconds)
+  • Just refresh your browser - NO RESTART NEEDED
+  • See output in the server terminal window
+
+⚠️ EXCEPTIONS (may need restart):
+  • Major config changes in _config.yml
+  • Adding new plugins (Gemfile changes)
+  • Then: Stop server (Ctrl+C) → Run bundle install → Start server again
+
+═══════════════════════════════════════════════════════════════════════════
+FILE LOCATIONS & WHAT TO EDIT:
+═══════════════════════════════════════════════════════════════════════════
+
+TEMPLATES (page layouts):
+  _layouts/        → default.html, single.html, etc.
+  _includes/       → reusable components (header, footer, sidebar)
+
+CONTENT:
+  _pages/          → static pages (about.md, cv.md, etc.)
+  _posts/          → blog posts
+  _publications/   → research publications
+  _talks/          → talk/presentation pages
+
+STYLING:
+  _sass/           → CSS/Sass files
+  assets/          → images, CSS, JavaScript
+
+SITE CONFIG:
+  _config.yml      → main configuration
+  _data/           → YAML data files (authors, navigation, etc.)
+
+═══════════════════════════════════════════════════════════════════════════
+CURRENT CHANGES:
+═══════════════════════════════════════════════════════════════════════════
+
+✅ FOOTER HIDDEN ON HOMEPAGE:
+  File: _layouts/default.html
+  Change: Wrapped footer in {% unless page.url == "/" %} condition
+  
+  This means:
+  • Homepage (/) → NO footer
+  • All other pages → footer still visible
+
+═══════════════════════════════════════════════════════════════════════════
+WORKFLOW EXAMPLE:
+═══════════════════════════════════════════════════════════════════════════
+
+1. Start server (in Terminal 1):
+   $ cd /usr/src/app
+   $ bundle exec jekyll serve -H 0.0.0.0 -w --port 4001 --config _config.yml,_config_docker.yml
+   → Keep this running, you'll see: "Server running... press ctrl-c to stop."
+
+2. Edit a file (in your editor):
+   • Edit _includes/masthead.html (navigation bar)
+   • Edit _pages/about.md (about page)
+   • Save the file
+
+3. Watch for rebuild:
+   • In Terminal 1, you'll see output like:
+     "Regenerating: _includes/masthead.html"
+     "done in 1.234 seconds."
+
+4. Refresh browser:
+   • Go to http://localhost:4001
+   • Press F5 (or Ctrl+R)
+   • See your changes live
+
+5. Repeat:
+   • Edit another file
+   • Refresh browser
+   • Changes appear instantly
+
+═══════════════════════════════════════════════════════════════════════════
+COMMON COMMANDS:
+═══════════════════════════════════════════════════════════════════════════
+
+Start dev server (with auto-rebuild):
+  bundle exec jekyll serve -H 0.0.0.0 -w --port 4001 --config _config.yml,_config_docker.yml
+
+Build site once (no server):
+  bundle exec jekyll build
+
+Stop the server:
+  Ctrl + C (in the terminal running the server)
+
+Reinstall dependencies:
+  bundle install
+
+═══════════════════════════════════════════════════════════════════════════
+TROUBLESHOOTING:
+═══════════════════════════════════════════════════════════════════════════
+
+Q: Port 4001 is in use?
+A: Use a different port:
+   bundle exec jekyll serve -H 0.0.0.0 -w --port 4002 --config _config.yml,_config_docker.yml
+
+Q: Changes not showing up?
+A: 1. Check server terminal for errors
+   2. Hard refresh browser (Ctrl+Shift+R or Cmd+Shift+R)
+   3. Stop and restart server (Ctrl+C, then run command again)
+
+Q: "Bundle not found" error?
+A: Run: bundle install
+
+Q: Major changes to config not working?
+A: Restart the server:
+   1. Ctrl+C to stop
+   2. Run the start command again
+
+═══════════════════════════════════════════════════════════════════════════
+FINAL OUTPUT:
+═══════════════════════════════════════════════════════════════════════════
+
+Generated static site is in: _site/
+
+When you're ready to publish, all files in _site/ are your final website.
+
+═══════════════════════════════════════════════════════════════════════════

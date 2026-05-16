@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Ganesh Mohane"
 title_separator          : "-"
 name                     : &name "Ganesh Mohane"
-description              : &description "Ganesh Mohane's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "ML Engineer at AISOLO | Building Privacy AI & ML Infrastructure"
 url                      : https://ganeshmohane.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -25,10 +25,10 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Ganesh Mohane"
-  pronouns         : # example: "she/her"  
-  bio              : "Aspiring engineer exploring AIML field"
-  location         : "Navi Mumbai, India"
-  employer         : "Mumbai University"
+  pronouns         : "He/Him"
+  bio              : "ML Engineer at AISOLO | Building Privacy AI (BgBlur.com) & CMS Platform (Infloq.com) | Faster Inference | Model Deployments & Finetuning"
+  location         : "Mumbai, Maharashtra, India"
+  employer         : "AISOLO Tech"
   uri              : # URL
   email            : "ganeshmohane5@gmail.com" 
 
