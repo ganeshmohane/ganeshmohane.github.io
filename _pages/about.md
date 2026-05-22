@@ -15,4 +15,12 @@ I prefer things that are simple and useful. When I’m not experimenting with si
 
 If you want to say hi or chat about anything (projects, music, or a great café), feel free to get in touch.
 
+## Latest Posts
+
+<ul class="latest-posts">
+{% for post in site.posts limit:5 %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+
 
