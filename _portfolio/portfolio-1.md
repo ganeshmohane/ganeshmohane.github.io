@@ -1,7 +1,19 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Privacy AI Video Blur"
+excerpt: "Production privacy protection for video using real-time object detection and intelligent background blurring."
 collection: portfolio
+stack:
+  - Computer Vision
+  - CUDA
+  - TensorRT
+  - Video Processing
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+Privacy-focused background blur for real-time and recorded video workflows. Built to process visual content efficiently while keeping the deployment usable at production scale.
+
+## Focus areas
+
+- Real-time person and background segmentation
+- CUDA and TensorRT inference optimization
+- Low-latency video processing
+- Reliable deployment for web products
