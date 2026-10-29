@@ -15,7 +15,7 @@ redirect_from:
     <p class="home-role">ML Engineer · Privacy AI · Production Inference</p>
     <p class="home-summary">I build and deploy machine-learning systems that are fast, reliable, and useful in production. My work spans model optimization, privacy-focused computer vision, CUDA and TensorRT inference, and scalable ML infrastructure.</p>
     <div class="home-links">
-      <span><i class="fas fa-location-dot"></i> Mumbai, India</span>
+      <span><i class="fas fa-location-dot"></i> Navi Mumbai, India</span>
       <a href="mailto:ganeshmohane5@gmail.com"><i class="fas fa-envelope"></i> Email</a>
       <a href="https://github.com/ganeshmohane"><i class="fab fa-github"></i> GitHub</a>
       <a href="https://www.linkedin.com/in/ganeshmohane"><i class="fab fa-linkedin"></i> LinkedIn</a>
