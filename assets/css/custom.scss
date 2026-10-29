@@ -22,7 +22,14 @@ body { background: var(--paper); color: var(--ink); }
 #main { max-width: 1180px; }
 
 .home-page { max-width: 980px; margin: 0 auto; padding: 4rem 0 2rem; }
-.home-hero { text-align: center; padding-bottom: 3rem; }
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 3rem;
+}
 .home-photo {
   width: 168px;
   height: 168px;
