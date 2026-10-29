@@ -13,7 +13,9 @@ redirect_from:
     <img class="home-photo" src="{{ site.baseurl }}/images/profile.png" alt="Ganesh Mohane">
     <h1>Ganesh Mohane</h1>
     <p class="home-role">ML Engineer · Privacy AI · Production Inference</p>
-    <p class="home-summary">I build and deploy machine-learning systems that are fast, reliable, and useful in production. My work spans model optimization, privacy-focused computer vision, CUDA and TensorRT inference, and scalable ML infrastructure.</p>
+    <div class="home-summary-wrap" style="width: 100%; text-align: center;">
+      <p class="home-summary" style="display: block; width: 680px; max-width: calc(100% - 2rem); margin: 0 auto 1.35rem; text-align: center !important;">I build and deploy machine-learning systems that are fast, reliable, and useful in production. My work spans model optimization, privacy-focused computer vision, CUDA and TensorRT inference, and scalable ML infrastructure.</p>
+    </div>
     <div class="home-links">
       <span><i class="fas fa-location-dot"></i> Navi Mumbai, India</span>
       <a href="mailto:ganeshmohane5@gmail.com"><i class="fas fa-envelope"></i> Email</a>
