@@ -34,15 +34,19 @@ body { background: var(--paper); color: var(--ink); }
 }
 .home-hero h1 { margin: 0 0 .35rem; font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.05; }
 .home-role { color: var(--accent); font-size: 1.05rem; font-weight: 700; margin-bottom: .8rem; }
-.home-summary {
-  width: min(680px, 100%);
-  margin: 0 auto 1.35rem;
+.home-page .home-hero .home-summary {
+  display: block;
+  width: min(680px, calc(100% - 2rem));
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.35rem;
   text-align: center;
   text-wrap: balance;
   line-height: 1.7;
   font-size: 1.08rem;
   color: var(--muted);
 }
+#theme-toggle, .theme-toggle, [id="theme-toggle"] { display: none !important; }
 .home-links { display: flex; justify-content: center; flex-wrap: wrap; gap: .65rem; }
 .home-links a, .home-links span {
   display: inline-flex;
