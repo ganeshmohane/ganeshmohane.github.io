@@ -10,9 +10,11 @@
 
     try {
       await navigator.clipboard.writeText(url);
-      label.textContent = "Link copied";
+      button.setAttribute("title", "Link copied");
+      button.setAttribute("aria-label", "Link copied");
       window.setTimeout(function () {
-        label.textContent = "Copy link";
+        button.setAttribute("title", "Copy link");
+        button.setAttribute("aria-label", "Copy link");
       }, 1800);
     } catch (error) {
       window.prompt("Copy this post link:", url);

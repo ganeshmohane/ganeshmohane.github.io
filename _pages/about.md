@@ -33,10 +33,6 @@ redirect_from:
         <div class="post-card-content">
           <time class="post-card-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
           <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-          <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
-          <div class="post-tags">
-            {% for tag in post.tags limit:3 %}<span>{{ tag }}</span>{% endfor %}
-          </div>
         </div>
         {% if post.header.teaser %}
         <a class="post-card-image-link" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">
