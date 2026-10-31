@@ -31,7 +31,6 @@ redirect_from:
       {% for post in recent_posts limit:4 %}
       <article class="post-card">
         <div class="post-card-content">
-          <time class="post-card-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
           <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         </div>
         {% if post.header.teaser %}
