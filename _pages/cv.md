@@ -9,8 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-## 📄 Resume PDF
-
 <div style="width: 100%; height: 800px; border: 2px solid #ddd; border-radius: 8px; overflow: hidden; margin-bottom: 40px;">
   <iframe 
     src="{{ base_path }}/files/resume.pdf#view=FitH"
@@ -18,5 +16,4 @@ redirect_from:
   </iframe>
 </div>
 
-**[📥 Download Resume PDF]({{ base_path }}/files/resume.pdf)**
 
