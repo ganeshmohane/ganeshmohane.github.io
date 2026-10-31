@@ -67,6 +67,34 @@ body { background: var(--paper); color: var(--ink); }
   font-size: .9rem;
 }
 .home-links a:hover { border-color: var(--accent); color: var(--accent); }
+.home-links .home-contact-icon { justify-content: center; width: 42px; height: 42px; padding: 0; }
+
+.author__urls .author__contact-icon {
+  flex: 0 0 auto;
+  margin-right: .65rem;
+}
+.author__urls .author__contact-icon a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  text-decoration: none;
+}
+.author__urls .author__contact-icon i {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .author__urls {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+  .author__urls .author__desktop {
+    flex-basis: 100%;
+  }
+}
 
 .home-section { padding-top: 2rem; }
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }

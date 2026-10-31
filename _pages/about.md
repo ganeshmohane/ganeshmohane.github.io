@@ -18,9 +18,10 @@ redirect_from:
     </div>
     <div class="home-links">
       <span><i class="fas fa-location-dot"></i> Navi Mumbai, India</span>
-      <a href="mailto:ganeshmohane5@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-      <a href="https://github.com/ganeshmohane"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://www.linkedin.com/in/ganeshmohane"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a class="home-contact-icon" href="mailto:ganeshmohane5@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a class="home-contact-icon" href="https://github.com/ganeshmohane" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a class="home-contact-icon" href="https://kaggle.com/ganeshmohane" title="Kaggle" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+      <a class="home-contact-icon" href="https://www.linkedin.com/in/ganeshmohane" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
     </div>
   </section>
 
