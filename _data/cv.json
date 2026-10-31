@@ -142,11 +142,18 @@
   ],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
+      "name": "Privacy AI Models",
       "category": "portfolio",
       "date": "",
       "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "description": "Rebuilt face and license plate detection pipeline with TensorRT, multi-GPU inference, Flask APIs, logging, monitoring, and under-200-ms per-frame processing."
+    },
+    {
+      "name": "Production ML Inference Optimization",
+      "category": "portfolio",
+      "date": "",
+      "url": "",
+      "description": "PyTorch model export and validation through ONNX and TensorRT, with precision optimization and latency benchmarking."
     }
   ]
 }

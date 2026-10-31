@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Privacy AI models project</title>
+  <desc id="desc">Face and license plate detection privacy processing pipeline with GPU acceleration.</desc>
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <circle cx="1100" cy="80" r="180" fill="#dcfce7"/>
+  <circle cx="80" cy="590" r="200" fill="#e0e7ff"/>
+  <text x="70" y="100" fill="#64748b" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="4">PRODUCTION CV</text>
+  <text x="70" y="170" fill="#0f172a" font-family="Arial, sans-serif" font-size="58" font-weight="800">Privacy AI Models</text>
+
+  <g transform="translate(70 245)">
+    <rect width="260" height="220" rx="24" fill="#fff" stroke="#dbe4f0" stroke-width="3"/>
+    <circle cx="130" cy="96" r="58" fill="#c7d2fe"/>
+    <path d="M104 128V96a26 26 0 0152 0v32M118 86a12 12 0 0124 0M118 112h24M130 98v14" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+    <text x="130" y="190" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="24" font-weight="800">FACE</text>
+  </g>
+  <g transform="translate(470 245)">
+    <rect width="260" height="220" rx="24" fill="#fff" stroke="#dbe4f0" stroke-width="3"/>
+    <rect x="35" y="68" width="190" height="95" rx="10" fill="#1e293b"/>
+    <rect x="55" y="90" width="150" height="50" rx="5" fill="#dbeafe"/>
+    <text x="130" y="124" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="20" font-weight="800">MH 12 AB 1234</text>
+    <text x="130" y="190" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="24" font-weight="800">LICENSE PLATE</text>
+  </g>
+  <g transform="translate(870 245)">
+    <rect width="260" height="220" rx="24" fill="#fff" stroke="#dbe4f0" stroke-width="3"/>
+    <circle cx="130" cy="96" r="58" fill="#76b900"/>
+    <path d="M100 118V74h60v44M112 118V88h36v30" fill="none" stroke="#fff" stroke-width="10"/>
+    <text x="130" y="190" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="24" font-weight="800">TENSORRT GPU</text>
+  </g>
+  <rect x="70" y="535" width="1060" height="38" rx="19" fill="#0f172a"/>
+  <text x="600" y="561" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="700">&lt; 200 MS / FRAME  •  MULTI-GPU  •  FLASK  •  MLOPS</text>
+</svg>

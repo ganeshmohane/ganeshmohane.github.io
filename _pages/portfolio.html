@@ -9,6 +9,9 @@ author_profile: false
 <div class="project-grid">
 {% for project in site.portfolio %}
   <article class="project-card">
+    {% if project.header.teaser %}
+      <img class="project-card-image" src="{{ project.header.teaser | relative_url }}" alt="{{ project.title }} project graphic">
+    {% endif %}
     <h2>{{ project.title }}</h2>
     <p>{{ project.excerpt | strip_html | truncate: 180 }}</p>
     {% if project.stack %}

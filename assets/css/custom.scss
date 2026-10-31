@@ -111,7 +111,15 @@ body { background: var(--paper); color: var(--ink); }
   font-size: .72rem;
   font-weight: 700;
 }
-.project-card { min-height: 190px; }
+.project-card { min-height: 190px; overflow: hidden; }
+.project-card-image {
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  height: auto;
+  margin-bottom: 0.75rem;
+  object-fit: cover;
+  width: 100%;
+}
 .project-stack { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: auto; }
 .project-card .project-link { margin-top: 1rem; font-weight: 700; }
 
