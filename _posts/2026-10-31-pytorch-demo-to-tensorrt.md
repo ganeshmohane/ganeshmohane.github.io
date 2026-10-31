@@ -18,7 +18,13 @@ header:
   teaser: pytorch-tensorrt-graphic.svg
 ---
 
-## Why speed matters after a demo starts working
+## TL;DR
+
+- Export a validated PyTorch model to ONNX before building a TensorRT engine.
+- TensorRT can improve GPU inference through graph optimization, kernel selection, and FP16 or INT8 execution.
+- Validate accuracy and benchmark the complete request path before deployment; performance gains do not automatically justify precision changes.
+
+## When TensorRT Makes Sense
 
 A trained model running in a notebook is a good starting point, but production inference has different requirements. Requests arrive continuously, latency must remain predictable, and GPU utilization must be efficient.
 
@@ -30,7 +36,7 @@ TensorRT does not change the trained model weights or retrain the network. It bu
 
 ---
 
-## The conversion pipeline
+## PyTorch to ONNX
 
 A typical inference optimization pipeline looks like this:
 
@@ -50,7 +56,7 @@ Every step should be validated. Optimizing a model that produces incorrect outpu
 
 ---
 
-## Step 1: Export the model to ONNX
+### Export the model to ONNX
 
 ONNX provides a portable intermediate representation for inference engines. For a PyTorch model, export with a representative input shape and a supported operator set.
 
@@ -79,7 +85,7 @@ Dynamic batch support is useful when the service may receive different batch siz
 
 ---
 
-## Step 2: Validate the ONNX model
+### Validate the ONNX model
 
 Before building TensorRT, verify that the ONNX graph is valid and behaves like the original model.
 
@@ -113,7 +119,7 @@ Also use a few real inputs rather than only random tensors. Edge cases often rev
 
 ---
 
-## Step 3: Build a TensorRT engine
+## Building the TensorRT Engine
 
 TensorRT can build an engine from ONNX using its Python API or the `trtexec` command-line tool. The command-line tool is useful for quick experiments.
 
@@ -137,7 +143,7 @@ TensorRT can also build engines with:
 
 ---
 
-## Dynamic shapes
+### Dynamic shapes
 
 If ONNX input dimensions vary, the TensorRT builder needs a range of supported shapes.
 
@@ -153,7 +159,7 @@ The best approach is to profile the actual production traffic before selecting t
 
 ---
 
-## INT8 needs more than a flag
+## FP16 and INT8
 
 INT8 can significantly improve throughput on GPUs that support it efficiently, but it introduces an additional accuracy risk.
 
@@ -179,7 +185,11 @@ FP16 or INT8 should not be chosen because of a benchmark alone. The model should
 
 ---
 
-## Measure correctly
+## Accuracy Validation
+
+Compare outputs from PyTorch, ONNX Runtime, and TensorRT using representative inputs. Check errors, labels, confidence values, bounding boxes, masks, or application-specific acceptance criteria rather than relying only on model output shape.
+
+## Latency Benchmarking
 
 A valid benchmark avoids common mistakes:
 
@@ -205,7 +215,9 @@ GPU timing can be misleading if CPU-side synchronization is placed in the wrong 
 
 ---
 
-## TensorRT engine portability
+## Deployment and Operations
+
+### TensorRT engine portability
 
 A TensorRT engine is not automatically portable.
 
@@ -222,7 +234,9 @@ Keeping the ONNX model as a source artifact also makes rebuilding and debugging 
 
 ---
 
-## Common problems
+## Limitations
+
+### Common problems
 
 ### Unsupported ONNX operator
 
@@ -246,7 +260,7 @@ The bottleneck may be CPU preprocessing, memory transfers, synchronization, or r
 
 ---
 
-## When TensorRT is not the answer
+### When TensorRT is not the answer
 
 TensorRT is valuable for NVIDIA GPU inference, especially for repeated, production workloads. It is not a replacement for:
 
@@ -261,7 +275,7 @@ If preprocessing takes 40 ms and the model takes 5 ms, optimizing the model alon
 
 ---
 
-## Final takeaway
+## Final Recommendation
 
 Converting a demo into a production model is not a single export command. It is a pipeline:
 
@@ -278,9 +292,14 @@ ONNX made my company's demo easier to standardize, but TensorRT was the step tha
 
 The fastest engine is only useful if it returns the same results the application expects, runs on the target hardware, and improves real user latency.
 
+## Related Reading
+
+- [Understanding CPU, CUDA, and TensorRT Runtimes](/posts/cpu-cuda-tensorrt/)
+- [Open-Source Licenses: MIT, Apache 2.0, GPL and More](/posts/open-source-licenses/)
+
 ---
 
-## Useful resources
+## Sources
 
 - [NVIDIA TensorRT Documentation](https://docs.nvidia.com/deeplearning/tensorrt/)
 - [TensorRT ONNX Export Support](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#working-with-onnx)

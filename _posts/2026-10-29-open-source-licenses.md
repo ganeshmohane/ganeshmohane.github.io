@@ -15,6 +15,12 @@ header:
   teaser: open-source-licenses-graphic.svg
 ---
 
+## TL;DR
+
+- MIT and BSD-style licenses are permissive, while GPL licenses usually require source-sharing obligations for distributed derivative works.
+- Apache 2.0 adds explicit patent language and notices; MPL applies file-level copyleft rather than broad application-level requirements.
+- Choose a license by considering code ownership, commercial use, patent risk, distribution, libraries versus applications, and contributor expectations.
+
 ## Why software licenses exist
 
 Software is protected by copyright as soon as someone creates it. That means you generally need permission from the copyright holder before copying, modifying, distributing, or selling the software.
@@ -195,7 +201,7 @@ License compatibility is not guaranteed just because two licenses are permissive
 
 ---
 
-## Final takeaway
+## Final Recommendation
 
 Licenses are not paperwork that appears after engineering is finished. They are part of how software is designed, shared, distributed, and respected.
 
@@ -204,3 +210,15 @@ As a new developer, your goal is not to memorize every legal clause. It is to kn
 When choosing a license for your project, make the decision deliberately. Add the license file. Explain the choice in your documentation. If the project grows into a company or commercial product, seek qualified legal advice.
 
 **Good code can be reused. Good developers make sure it is reused responsibly.**
+
+## Related Reading
+
+- [From a PyTorch Demo to a TensorRT Engine](/posts/pytorch-demo-to-tensorrt/)
+- [Understanding CPU, CUDA, and TensorRT Runtimes](/posts/cpu-cuda-tensorrt/)
+
+## Sources
+
+- [MIT License](https://opensource.org/license/mit)
+- [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+- [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.html)
+- [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/)

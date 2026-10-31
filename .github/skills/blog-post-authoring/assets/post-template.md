@@ -14,26 +14,52 @@ header:
   teaser: post-name-graphic.svg
 ---
 
-## Why this topic matters
+## TL;DR
 
-Describe the real problem and production context.
+- Key conclusion
+- Recommended approach
+- Important limitation
 
-## Approach
+## When TensorRT Makes Sense / When the Topic Applies
 
-Explain the recommended workflow.
+Describe the real problem, audience, and production context.
 
-## Implementation
+## PyTorch to ONNX / Technology to Implementation
 
-Include commands or code with necessary context.
+Explain prerequisites, input contracts, export, or setup.
 
-## Validation
+## Building the TensorRT Engine / Core Implementation
 
-Explain how correctness, latency, accuracy, and failures are measured.
+Include complete commands or code with necessary context.
 
-## Common failure modes
+## FP16 and INT8 / Configuration and Tradeoffs
 
-List only relevant implementation risks.
+Explain precision, configuration choices, and their tradeoffs.
 
-## Final takeaway
+## Accuracy Validation
+
+Compare outputs and application-level criteria using representative inputs.
+
+## Latency Benchmarking
+
+Report methodology, environment, warm-up, percentiles, throughput, and end-to-end latency.
+
+## Deployment and Operations
+
+Describe packaging, compatibility, monitoring, logging, rollback, and operations.
+
+## Limitations
+
+List implementation risks, hardware constraints, portability issues, and unsupported cases.
+
+## Final Recommendation
 
 Summarize the practical decision and the next step.
+
+## Related Reading
+
+- Link one or more relevant posts or project pages.
+
+## Sources
+
+- Link official documentation and verified references.

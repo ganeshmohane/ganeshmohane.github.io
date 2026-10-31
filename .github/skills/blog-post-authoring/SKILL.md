@@ -36,8 +36,8 @@ Do not invent employers, products, benchmark results, dates, credentials, or exp
 
 ## Writing structure
 
-1. Start with a short problem or production context.
-2. Add a clear overview explaining what the reader will learn.
+1. Start the body with TL;DR after the featured graphic.
+2. Use H2 headings that match the article template: applicability, implementation, validation, operations, limitations, recommendation, related reading, and sources.
 3. Explain concepts and decisions in a practical order.
 4. Use headings that describe outcomes or questions.
 5. Include working code examples where they add value.
