@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">PyTorch to TensorRT optimization pipeline</title>
+  <desc id="desc">A graphical workflow from PyTorch through ONNX and TensorRT to faster GPU inference.</desc>
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <circle cx="1080" cy="80" r="190" fill="#e8f0ff"/>
+  <circle cx="120" cy="610" r="220" fill="#eef2ff"/>
+  <text x="70" y="105" fill="#64748b" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="4">MODEL OPTIMIZATION</text>
+  <text x="70" y="175" fill="#0f172a" font-family="Arial, sans-serif" font-size="58" font-weight="800">PyTorch → ONNX → TensorRT</text>
+
+  <g transform="translate(80 245)">
+    <rect width="280" height="210" rx="24" fill="#fff" stroke="#dbe4f0" stroke-width="3"/>
+    <circle cx="140" cy="82" r="54" fill="#ff6b4a"/>
+    <path d="M118 59h44v44h-44z" fill="#fff"/>
+    <text x="140" y="155" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="28" font-weight="800">PYTORCH</text>
+    <text x="140" y="185" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="20">Working demo</text>
+  </g>
+
+  <path d="M380 350h95" fill="none" stroke="#94a3b8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M462 327l28 23-28 23" fill="none" stroke="#94a3b8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(500 245)">
+    <rect width="280" height="210" rx="24" fill="#fff" stroke="#dbe4f0" stroke-width="3"/>
+    <circle cx="140" cy="82" r="54" fill="#4f8df7"/>
+    <path d="M112 82l28-28 28 28-28 28z" fill="#fff"/>
+    <text x="140" y="155" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="28" font-weight="800">ONNX</text>
+    <text x="140" y="185" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="20">Portable graph</text>
+  </g>
+
+  <path d="M800 350h95" fill="none" stroke="#94a3b8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M882 327l28 23-28 23" fill="none" stroke="#94a3b8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(920 245)">
+    <rect width="280" height="210" rx="24" fill="#fff" stroke="#dbe4f0" stroke-width="3"/>
+    <circle cx="140" cy="82" r="54" fill="#76b900"/>
+    <path d="M112 105V59h56v46M124 105V73h32v32" fill="none" stroke="#fff" stroke-width="8"/>
+    <text x="140" y="155" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="28" font-weight="800">TENSORRT</text>
+    <text x="140" y="185" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="20">GPU engine</text>
+  </g>
+
+  <rect x="80" y="535" width="1120" height="38" rx="19" fill="#0f172a"/>
+  <text x="640" y="561" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="700">EXPORT • VALIDATE • BUILD • BENCHMARK • DEPLOY</text>
+</svg>

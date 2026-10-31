@@ -1,5 +1,25 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<script>
+  document.addEventListener("click", async function (event) {
+    const button = event.target.closest(".post__copy-link");
+    if (!button) return;
+
+    const label = button.querySelector("span");
+    const url = button.dataset.copyUrl || window.location.href;
+
+    try {
+      await navigator.clipboard.writeText(url);
+      label.textContent = "Link copied";
+      window.setTimeout(function () {
+        label.textContent = "Copy link";
+      }, 1800);
+    } catch (error) {
+      window.prompt("Copy this post link:", url);
+    }
+  });
+</script>
+
 {% include analytics.html %}
 
 {% include comments-providers/scripts.html %}

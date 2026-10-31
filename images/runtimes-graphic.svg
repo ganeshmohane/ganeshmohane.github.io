@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">CPU CUDA and TensorRT runtime comparison</title>
+  <desc id="desc">A graphic comparing CPU, CUDA and TensorRT inference runtimes.</desc>
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <circle cx="1100" cy="90" r="180" fill="#ede9fe"/>
+  <circle cx="80" cy="590" r="190" fill="#dcfce7"/>
+  <text x="70" y="100" fill="#64748b" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="4">INFERENCE RUNTimes</text>
+  <text x="70" y="170" fill="#0f172a" font-family="Arial, sans-serif" font-size="58" font-weight="800">CPU, CUDA and TensorRT</text>
+
+  <g transform="translate(100 260)">
+    <rect width="270" height="240" rx="24" fill="#fff" stroke="#dbe4f0" stroke-width="3"/>
+    <text x="135" y="52" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="24" font-weight="800">CPU</text>
+    <rect x="55" y="92" width="160" height="95" rx="12" fill="#94a3b8"/>
+    <path d="M75 112h120v55H75z" fill="#e2e8f0"/>
+    <text x="135" y="220" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="20" font-weight="700">Flexible</text>
+  </g>
+
+  <g transform="translate(465 260)">
+    <rect width="270" height="240" rx="24" fill="#fff" stroke="#dbe4f0" stroke-width="3"/>
+    <text x="135" y="52" text-anchor="middle" fill="#2563eb" font-family="Arial, sans-serif" font-size="24" font-weight="800">CUDA</text>
+    <rect x="55" y="92" width="160" height="95" rx="12" fill="#2563eb"/>
+    <circle cx="95" cy="140" r="15" fill="#bfdbfe"/>
+    <circle cx="135" cy="140" r="15" fill="#bfdbfe"/>
+    <circle cx="175" cy="140" r="15" fill="#bfdbfe"/>
+    <text x="135" y="220" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="20" font-weight="700">Parallel</text>
+  </g>
+
+  <g transform="translate(830 260)">
+    <rect width="270" height="240" rx="24" fill="#fff" stroke="#dbe4f0" stroke-width="3"/>
+    <text x="135" y="52" text-anchor="middle" fill="#76b900" font-family="Arial, sans-serif" font-size="24" font-weight="800">TENSORRT</text>
+    <rect x="55" y="92" width="160" height="95" rx="12" fill="#76b900"/>
+    <path d="M75 167l35-40 30 20 55-50" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="135" y="220" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="20" font-weight="700">Optimized</text>
+  </g>
+</svg>

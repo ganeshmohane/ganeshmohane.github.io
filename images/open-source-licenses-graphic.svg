@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Open-source software license guide</title>
+  <desc id="desc">A graphic showing MIT, Apache, GPL, Mozilla and BSD licenses connected to source code.</desc>
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <circle cx="1080" cy="560" r="250" fill="#e0f2fe"/>
+  <circle cx="160" cy="0" r="180" fill="#ede9fe"/>
+  <text x="70" y="100" fill="#64748b" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="4">SOFTWARE LAW</text>
+  <text x="70" y="170" fill="#0f172a" font-family="Arial, sans-serif" font-size="58" font-weight="800">Code, licenses and permissions</text>
+
+  <g transform="translate(600 315)">
+    <rect x="-150" y="-95" width="300" height="190" rx="28" fill="#0f172a"/>
+    <path d="M-45 25l45-45 45 45-45 45z" fill="#38bdf8"/>
+    <path d="M0-20v90M-45 25h90" stroke="#fff" stroke-width="10"/>
+    <text y="-120" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="26" font-weight="800">SOURCE CODE</text>
+  </g>
+
+  <g fill="#fff" stroke="#cbd5e1" stroke-width="3">
+    <rect x="70" y="280" width="260" height="120" rx="20"/>
+    <rect x="870" y="280" width="260" height="120" rx="20"/>
+    <rect x="230" y="470" width="260" height="120" rx="20"/>
+    <rect x="710" y="470" width="260" height="120" rx="20"/>
+  </g>
+  <path d="M330 340h120M750 340h120M490 530h220M490 530l-30 0M710 530l30 0" fill="none" stroke="#94a3b8" stroke-width="8"/>
+
+  <g text-anchor="middle" font-family="Arial, sans-serif">
+    <text x="200" y="328" fill="#0f172a" font-size="28" font-weight="800">MIT</text>
+    <text x="200" y="362" fill="#64748b" font-size="20">Permissive</text>
+    <text x="1000" y="328" fill="#0f172a" font-size="28" font-weight="800">APACHE 2.0</text>
+    <text x="1000" y="362" fill="#64748b" font-size="20">Patents + terms</text>
+    <text x="360" y="518" fill="#0f172a" font-size="28" font-weight="800">GPL</text>
+    <text x="360" y="552" fill="#64748b" font-size="20">Copyleft</text>
+    <text x="840" y="518" fill="#0f172a" font-size="28" font-weight="800">MPL</text>
+    <text x="840" y="552" fill="#64748b" font-size="20">File-level</text>
+  </g>
+</svg>

@@ -10,6 +10,9 @@ tags:
 categories:
   - software-engineering
 excerpt: "A practical guide to popular software licenses, why they exist, and how developers should choose and respect them."
+header:
+  image: /images/open-source-licenses-graphic.svg
+  teaser: /images/open-source-licenses-graphic.svg
 ---
 
 ## Why software licenses exist
