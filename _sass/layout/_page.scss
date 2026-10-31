@@ -399,7 +399,7 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
-.post__byline {
+.post__meta-row {
   align-items: center;
   color: #64748b;
   display: flex;
@@ -410,6 +410,29 @@
   strong {
     color: #0f172a;
   }
+}
+
+.post__meta-date {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.post__meta-read-time {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.35rem;
+}
+
+.post__featured-image {
+  aspect-ratio: 1200 / 630;
+  border-radius: 8px;
+  border: 1px solid #dbe4f0;
+  display: block;
+  height: auto;
+  margin: 1rem 0 1.5rem;
+  object-fit: cover;
+  width: 100%;
 }
 
 .post__copy-link {

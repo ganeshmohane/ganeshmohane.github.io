@@ -14,8 +14,8 @@ categories:
   - ml-optimization
 excerpt: "A practical path for converting a working demo model into ONNX and then building a TensorRT engine for faster GPU inference."
 header:
-  image: /images/pytorch-tensorrt-graphic.svg
-  teaser: /images/pytorch-tensorrt-graphic.svg
+  image: pytorch-tensorrt-graphic.svg
+  teaser: pytorch-tensorrt-graphic.svg
 ---
 
 ## Why speed matters after a demo starts working

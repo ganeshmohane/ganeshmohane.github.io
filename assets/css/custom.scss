@@ -97,7 +97,32 @@ body { background: var(--paper); color: var(--ink); }
   background: var(--surface);
 }
 .post-card:hover, .project-card:hover { border-color: #b8c4ca; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(24, 34, 48, .08); }
-.post-card { transition: .18s ease; }
+.post-card {
+  align-items: stretch;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  transition: .18s ease;
+}
+.post-card-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.post-card-image-link {
+  align-self: center;
+  display: block;
+  width: 180px;
+}
+.post-card-image {
+  aspect-ratio: 16 / 10;
+  border-radius: 7px;
+  border: 1px solid var(--line);
+  display: block;
+  height: 112px;
+  object-fit: cover;
+  width: 180px;
+}
 .post-card-date { color: var(--accent); font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
 .post-card h2, .project-card h2 { margin: .65rem 0 .55rem; font-size: 1.2rem; line-height: 1.25; }
 .post-card h2 a, .project-card h2 { color: var(--ink); }
@@ -132,6 +157,13 @@ body { background: var(--paper); color: var(--ink); }
 @media (max-width: 768px) {
   .home-page { padding: 2.25rem .25rem; }
   .post-grid, .project-grid { grid-template-columns: 1fr; }
+  .post-card {
+    grid-template-columns: minmax(0, 1fr) 140px;
+  }
+  .post-card-image-link, .post-card-image {
+    width: 140px;
+  }
+  .post-card-image { height: 88px; }
   .home-photo { width: 140px; height: 140px; }
   .page__inner-wrap { padding: 1.25rem; }
   .section-heading { align-items: center; }

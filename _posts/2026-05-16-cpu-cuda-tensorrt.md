@@ -13,8 +13,8 @@ categories:
   - ml-optimization
 excerpt: "Same model can run 200ms on CPU, 80ms on CUDA, or 40ms on TensorRT. Learn why runtimes matter for ML inference."
 header:
-  image: /images/runtimes-graphic.svg
-  teaser: /images/runtimes-graphic.svg
+  image: runtimes-graphic.svg
+  teaser: runtimes-graphic.svg
 ---
 
 ## 🧠 Why this matters

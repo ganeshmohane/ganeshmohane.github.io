@@ -30,12 +30,19 @@ redirect_from:
       {% assign recent_posts = site.posts | sort: 'date' | reverse %}
       {% for post in recent_posts limit:4 %}
       <article class="post-card">
-        <time class="post-card-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
-        <div class="post-tags">
-          {% for tag in post.tags limit:3 %}<span>{{ tag }}</span>{% endfor %}
+        <div class="post-card-content">
+          <time class="post-card-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+          <div class="post-tags">
+            {% for tag in post.tags limit:3 %}<span>{{ tag }}</span>{% endfor %}
+          </div>
         </div>
+        {% if post.header.teaser %}
+        <a class="post-card-image-link" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">
+          <img class="post-card-image" src="{% if post.header.teaser contains '://' %}{{ post.header.teaser }}{% else %}{{ post.header.teaser | prepend: '/images/' | relative_url }}{% endif %}" alt="{{ post.title }} preview">
+        </a>
+        {% endif %}
       </article>
       {% endfor %}
     </div>
