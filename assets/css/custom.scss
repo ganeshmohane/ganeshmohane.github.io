@@ -99,15 +99,14 @@ body { background: var(--paper); color: var(--ink); }
 }
 .post-card:hover, .project-card:hover { border-color: #b8c4ca; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(24, 34, 48, .08); }
 .post-card {
-  align-items: center;
   background: transparent;
   border: 0;
   border-bottom: 1px solid var(--line);
   border-radius: 0;
   box-shadow: none;
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: minmax(0, 1fr) 220px;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
   min-height: 0;
   padding: 1rem 0;
   transition: none;
@@ -127,7 +126,7 @@ body { background: var(--paper); color: var(--ink); }
   min-width: 0;
 }
 .post-card-image-link {
-  align-self: center;
+  align-self: flex-start;
   display: block;
   width: 220px;
 }
@@ -141,8 +140,15 @@ body { background: var(--paper); color: var(--ink); }
   width: 220px;
 }
 .post-card-date { color: var(--accent); font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
-.post-card h2, .project-card h2 { margin: .65rem 0 .55rem; font-size: 1.2rem; line-height: 1.25; }
+.post-card h2, .project-card h2 { margin: 0; font-size: 1.2rem; line-height: 1.25; }
 .post-card h2 a, .project-card h2 { color: var(--ink); }
+.post-card h2 a {
+  text-decoration: none;
+}
+.post-card h2 a:hover,
+.post-card h2 a:focus {
+  text-decoration: none;
+}
 .post-card p, .project-card p { color: var(--muted); }
 .post-tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: auto; padding-top: .75rem; }
 .post-tags span, .project-stack span {
@@ -226,12 +232,12 @@ body { background: var(--paper); color: var(--ink); }
   .post-grid, .project-grid { grid-template-columns: 1fr; }
   .page__related .grid__wrapper { grid-template-columns: 1fr; }
   .post-card {
-    grid-template-columns: minmax(0, 1fr) 120px;
+    gap: .65rem;
   }
   .post-card-image-link, .post-card-image {
-    width: 120px;
+    width: min(220px, 100%);
   }
-  .post-card-image { height: 75px; }
+  .post-card-image { height: auto; }
   .home-photo { width: 140px; height: 140px; }
   .page__inner-wrap { padding: 1.25rem; }
   .section-heading { align-items: center; }

@@ -30,14 +30,14 @@ redirect_from:
       {% assign recent_posts = site.posts | sort: 'date' | reverse %}
       {% for post in recent_posts limit:4 %}
       <article class="post-card">
-        <div class="post-card-content">
-          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        </div>
         {% if post.header.teaser %}
         <a class="post-card-image-link" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">
           <img class="post-card-image" src="{% if post.header.teaser contains '://' %}{{ post.header.teaser }}{% else %}{{ post.header.teaser | prepend: '/images/' | relative_url }}{% endif %}" alt="{{ post.title }} preview">
         </a>
         {% endif %}
+        <div class="post-card-content">
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        </div>
       </article>
       {% endfor %}
     </div>
